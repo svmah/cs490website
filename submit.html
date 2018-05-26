@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stephanie</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<header class="fixednav">
+  <nav>
+    <label for="drop" class="toggle"><b id="menubutton">+</b></label>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+      <li><a href="index.html">home</a></li>
+      <li>
+        <label for="drop-1" class="toggle"><a href="#">Images</a>+</label>
+        <a href="#">Images</a>
+        <input type="checkbox" id="drop-1" />
+        <ul>
+          <li><a href="watergate.html">Water</a></li>
+          <li><a href="sky.html">Sky</a></li>
+          <li><a href="flowers.html">Flowers</a></li>
+          <li><a href="nature.html">Nature</a></li>
+          <li><a href="cityscapes.html">Cityscapes</a></li>
+          <li><a href="people.html">People</a></li>
+        </ul>
+      </li>
+      <li>
+        <label for="drop-2" class="toggle"><a href="#">about us</a>+</label>
+        <a href="#">about us</a>
+        <input type="checkbox" id="drop-2" />
+        <ul>
+          <li><a href="about.html">about us</a></li>
+          <li><a href="faq.html">faq</a></li>
+        </ul>
+      </li>
+      <li><a href="submit.html">Submit</a></li>
+    </ul>
+  </nav>
+</header>
+<a name="top"></a>
+<div class="contents">
+	<div class="imgpagewrapper">
+    	<div class="submission">
+        	<p class="question">Submitting a Photo?</p>
+          <form action="/submit-photo">
+            <input class="submission" type="text" placeholder="Name"><br><br>
+            <input class="submission" type="email" placeholder="E-mail"><br><br>
+          	<p class="question">Have you submitted an image to us before?</p>
+            <label class="submission"><input class="submission" type="radio" name="new">Yes</label>
+            <label class="submission"><input class="submission" type="radio" name="new">No</label><br><br>
+            <p class="question">What category does the photograph fall under? (Check all that apply)</p>
+            <label class="submission"><input class="submission" type="checkbox" name="category">Water</label>
+            <label class="submission"><input class="submission" type="checkbox" name="category">Sky</label>
+            <label class="submission"><input class="submission" type="checkbox" name="category">Flowers</label>
+            <label class="submission"><input class="submission" type="checkbox" name="category">Nature</label>
+            <label class="submission"><input class="submission" type="checkbox" name="category">Cityscape</label>
+            <label class="submission"><input class="submission" type="checkbox" name="category">People</label><br><br>
+            <input class="submission" type="text" placeholder="photo URL" required><br><br>
+            <textarea name="description" rows="10" cols="30">Photo Description</textarea><br><br>
+            <p class="question">How did you hear about us?</p>
+            <select name="marketing">
+            	<option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="word of mouth">Word of Mouth</option>
+                <option value="other">Other</option>
+                </select><br><br>
+            <button type="submit" value="Submit">Submit</button>
+          </form>
+          </div>
+    </div>
+  <div class="top"><a class="top" href="#top">^</a></div>
+</div>
+</body>
+</html>
