@@ -493,3 +493,7 @@ div.question:hover > .answer{
 .faq {
 	text-align:left;
 }
+
+.submission .question{
+	font-size:2em;
+}
